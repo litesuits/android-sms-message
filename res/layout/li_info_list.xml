@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_logo"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/circle"
+            android:id="@+id/head"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:layout_alignTop="@+id/head"
+            android:layout_toRightOf="@+id/head"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#7a6666"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:id="@+id/phone"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-00-00 00:00:00"
+            android:layout_alignTop="@+id/phone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#a99"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/time"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信内容"
+            android:layout_toRightOf="@+id/head"
+            android:layout_alignBottom="@+id/head"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#a99"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/body"/>
+</RelativeLayout>
